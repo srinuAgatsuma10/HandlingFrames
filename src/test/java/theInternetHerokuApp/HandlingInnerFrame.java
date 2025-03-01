@@ -21,12 +21,13 @@ public class HandlingInnerFrame {
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://the-internet.herokuapp.com/iframe");
-		// driver.manage().window().maximize();
+		driver.get("https://ui.vision/demo/webtest/frames/");
+		driver.manage().window().maximize();
 	}
 
 	@Test
-	public void nestedFrames() {
+	public void innerFrames() {
+		
 		// Close the popUp window
 		driver.findElement(By.xpath("//div[@aria-label='Close']//*[name()='svg']")).click();
 

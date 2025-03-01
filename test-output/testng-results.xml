@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-01T21:55:54 IST" name="Default suite" finished-at="2025-03-01T21:56:18 IST" duration-ms="24637">
+  <suite started-at="2025-03-01T22:16:41 IST" name="Default suite" finished-at="2025-03-01T22:16:57 IST" duration-ms="16165">
     <groups>
     </groups>
-    <test started-at="2025-03-01T21:55:54 IST" name="Default test" finished-at="2025-03-01T21:56:18 IST" duration-ms="24637">
-      <class name="theInternetHerokuApp.HandlingInnerFrame">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:theInternetHerokuApp.HandlingInnerFrame@3b69e7d1]" started-at="2025-03-01T21:55:54 IST" name="setUp" finished-at="2025-03-01T21:56:17 IST" duration-ms="23550" status="PASS">
+    <test started-at="2025-03-01T22:16:41 IST" name="Default test" finished-at="2025-03-01T22:16:57 IST" duration-ms="16165">
+      <class name="webAutomationFrames.HandlingInnerFrame">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:webAutomationFrames.HandlingInnerFrame@3b69e7d1]" started-at="2025-03-01T22:16:41 IST" name="setUp" finished-at="2025-03-01T22:16:55 IST" duration-ms="13989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="nestedFrames()[pri:0, instance:theInternetHerokuApp.HandlingInnerFrame@3b69e7d1]" started-at="2025-03-01T21:56:17 IST" name="nestedFrames" finished-at="2025-03-01T21:56:18 IST" duration-ms="661" status="PASS">
+        <test-method signature="nestedFrames()[pri:0, instance:webAutomationFrames.HandlingInnerFrame@3b69e7d1]" started-at="2025-03-01T22:16:55 IST" name="nestedFrames" finished-at="2025-03-01T22:16:57 IST" duration-ms="1713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nestedFrames -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theInternetHerokuApp.HandlingInnerFrame@3b69e7d1]" started-at="2025-03-01T21:56:18 IST" name="tearDown" finished-at="2025-03-01T21:56:18 IST" duration-ms="342" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:webAutomationFrames.HandlingInnerFrame@3b69e7d1]" started-at="2025-03-01T22:16:57 IST" name="tearDown" finished-at="2025-03-01T22:16:57 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- theInternetHerokuApp.HandlingInnerFrame -->
+      </class> <!-- webAutomationFrames.HandlingInnerFrame -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
