@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="theInternetHerokuApp.HandlingNestedFrames">
+      <class name="theInternetHerokuApp.HandlingInnerFrame">
         <methods>
-          <include name="setUp"/>
           <include name="nestedFrames"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- theInternetHerokuApp.HandlingNestedFrames -->
+      </class> <!-- theInternetHerokuApp.HandlingInnerFrame -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
