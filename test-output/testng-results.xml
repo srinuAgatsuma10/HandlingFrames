@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-01T20:55:46 IST" name="Default suite" finished-at="2025-03-01T20:55:54 IST" duration-ms="8516">
+    <groups>
+    </groups>
+    <test started-at="2025-03-01T20:55:46 IST" name="Default test" finished-at="2025-03-01T20:55:54 IST" duration-ms="8516">
+      <class name="theInternetHerokuApp.HandlingNestedFrames">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:theInternetHerokuApp.HandlingNestedFrames@3b69e7d1]" started-at="2025-03-01T20:55:46 IST" name="setUp" finished-at="2025-03-01T20:55:53 IST" duration-ms="7449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nestedFrames()[pri:0, instance:theInternetHerokuApp.HandlingNestedFrames@3b69e7d1]" started-at="2025-03-01T20:55:53 IST" name="nestedFrames" finished-at="2025-03-01T20:55:54 IST" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nestedFrames -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:theInternetHerokuApp.HandlingNestedFrames@3b69e7d1]" started-at="2025-03-01T20:55:54 IST" name="tearDown" finished-at="2025-03-01T20:55:54 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- theInternetHerokuApp.HandlingNestedFrames -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
