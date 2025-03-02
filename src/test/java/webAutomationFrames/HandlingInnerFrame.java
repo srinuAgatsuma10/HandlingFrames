@@ -78,7 +78,6 @@ public class HandlingInnerFrame {
 	
 	public void fillingForm(WebDriver driver) {
 		driver.findElement(By.xpath("//span[normalize-space()='I am a human']")).click();
-		//driver.findElement(By.xpath("//Iv[@id='i21']//div[@class='uHMk6b fsHoPb']")).click();
 		List<WebElement> checkBoxes = driver.findElements(By.xpath("//div[@role='list']//div[@role=\"list\"]//div[@role=\"listitem\"]"));
 		for(WebElement cb : checkBoxes) {
 			cb.click();
