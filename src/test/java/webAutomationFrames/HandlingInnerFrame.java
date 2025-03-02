@@ -1,6 +1,7 @@
 package webAutomationFrames;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -8,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -50,16 +52,19 @@ public class HandlingInnerFrame {
 		WebElement inner = driver.findElement(By.xpath(
 				"//iframe[@src=\"https://docs.google.com/forms/d/1yfUq-GO9BEssafd6TvHhf0D6QLDVG3q5InwNE2FFFFQ/viewform?embedded=true\"]"));
 		driver.switchTo().frame(inner);
-		driver.findElement(By.xpath("//span[normalize-space()='I am a human']")).click();
-		driver.findElement(By.xpath("//span[normalize-space()='Web Testing']")).click();
+		fillingForm(driver);
 		driver.switchTo().defaultContent();
 
 		// 4) Handling another frame [frame 4]
+		WebElement frame4 = driver.findElement(By.xpath("//frame[@src='frame_4.html']"));
+		driver.switchTo().frame(frame4);
+		driver.findElement(By.xpath("//input[@name='mytext4']")).sendKeys("You are my Treasure");
+		driver.switchTo().defaultContent();
 		
 		// 5) Handling another frame [frame 5]
 		WebElement frame5 = driver.findElement(By.xpath("//frame[@src='frame_5.html']"));
 		driver.switchTo().frame(frame5);
-		driver.findElement(By.xpath("//input[@name='mytext5']")).sendKeys("Sai Charan");
+		driver.findElement(By.xpath("//input[@name='mytext5']")).sendKeys("Everything if Food");
 		// Opening Frame5 link in another tab using Action class
 		WebElement f5Link = driver.findElement(By.xpath("//a[normalize-space()='https://a9t9.com']"));
 		act.keyDown(Keys.CONTROL).click(f5Link).keyUp(Keys.CONTROL).perform();
@@ -71,8 +76,20 @@ public class HandlingInnerFrame {
 		driver.quit();
 	}
 	
-//	public void fillingForm(WebDriver driver) {
-//		
-//	}
+	public void fillingForm(WebDriver driver) {
+		driver.findElement(By.xpath("//span[normalize-space()='I am a human']")).click();
+		//driver.findElement(By.xpath("//Iv[@id='i21']//div[@class='uHMk6b fsHoPb']")).click();
+		List<WebElement> checkBoxes = driver.findElements(By.xpath("//div[@role='list']//div[@role=\"list\"]//div[@role=\"listitem\"]"));
+		for(WebElement cb : checkBoxes) {
+			cb.click();
+		}
+		driver.findElement(By.xpath("//span[contains(text(),'Next')]")).click();
+		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("My Name reached to the Heaven");
+		driver.findElement(By.xpath("//div[@class='Pc9Gce Wic03c']")).sendKeys("To open a link in another tab using Selenium with Java, you can use one of the following approaches:");
+		// Submitting the Form.
+		//driver.findElement(By.xpath("//span[contains(text(),'Submit')]")).click();
+		// Clearing the Form.
+		driver.findElement(By.xpath("//span[contains(text(),'Clear form')]")).click();	
+	}
 	
 }
