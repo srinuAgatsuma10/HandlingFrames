@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAutomationFrames.HandlingInnerFrame">
+      <class name="demoAutomationTesting.HandlingSingle_InnerFrame">
         <methods>
-          <include name="nestedFrames"/>
-          <include name="setUp"/>
+          <include name="singleInnerFrame"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- webAutomationFrames.HandlingInnerFrame -->
+      </class> <!-- demoAutomationTesting.HandlingSingle_InnerFrame -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

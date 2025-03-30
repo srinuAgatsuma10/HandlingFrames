@@ -2,9 +2,13 @@ package demoAutomationTesting;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class HandlingSingle_InnerFrame {
 	
@@ -21,6 +25,11 @@ public class HandlingSingle_InnerFrame {
 	
 	@Test
 	public void singleInnerFrame() {
+		WebElement singleFrame = driver.findElement(By.xpath("//iframe[@id='singleframe']"));
+		driver.switchTo().frame(singleFrame);
+		String frameName = driver.findElement(By.xpath("//h5[normalize-space()='iFrame Demo']")).getText();
+		System.out.println("This is : "+frameName);
+		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Monkey D Luffy");
 		
 	}
 	
