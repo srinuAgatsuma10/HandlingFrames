@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-30T19:02:20 IST" name="Default suite" finished-at="2025-03-30T19:02:29 IST" duration-ms="9132">
+  <suite started-at="2025-03-30T19:11:33 IST" name="Default suite" finished-at="2025-03-30T19:11:45 IST" duration-ms="12239">
     <groups>
     </groups>
-    <test started-at="2025-03-30T19:02:20 IST" name="Default test" finished-at="2025-03-30T19:02:29 IST" duration-ms="9132">
-      <class name="demoAutomationTesting.HandlingSingle_InnerFrame">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:demoAutomationTesting.HandlingSingle_InnerFrame@5bf0d49]" started-at="2025-03-30T19:02:20 IST" name="setUp" finished-at="2025-03-30T19:02:28 IST" duration-ms="8277" status="PASS">
+    <test started-at="2025-03-30T19:11:33 IST" name="Default test" finished-at="2025-03-30T19:11:45 IST" duration-ms="12239">
+      <class name="demoAutomationTesting.HandlingNested_InnerFrame">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:demoAutomationTesting.HandlingNested_InnerFrame@5bf0d49]" started-at="2025-03-30T19:11:33 IST" name="setUp" finished-at="2025-03-30T19:11:44 IST" duration-ms="11164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="singleInnerFrame()[pri:0, instance:demoAutomationTesting.HandlingSingle_InnerFrame@5bf0d49]" started-at="2025-03-30T19:02:28 IST" name="singleInnerFrame" finished-at="2025-03-30T19:02:29 IST" duration-ms="356" status="PASS">
+        <test-method signature="nestedInnerFrame()[pri:0, instance:demoAutomationTesting.HandlingNested_InnerFrame@5bf0d49]" started-at="2025-03-30T19:11:44 IST" name="nestedInnerFrame" finished-at="2025-03-30T19:11:45 IST" duration-ms="566" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- singleInnerFrame -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:demoAutomationTesting.HandlingSingle_InnerFrame@5bf0d49]" started-at="2025-03-30T19:02:29 IST" name="tearDown" finished-at="2025-03-30T19:02:29 IST" duration-ms="426" status="PASS">
+        </test-method> <!-- nestedInnerFrame -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:demoAutomationTesting.HandlingNested_InnerFrame@5bf0d49]" started-at="2025-03-30T19:11:45 IST" name="tearDown" finished-at="2025-03-30T19:11:45 IST" duration-ms="432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- demoAutomationTesting.HandlingSingle_InnerFrame -->
+      </class> <!-- demoAutomationTesting.HandlingNested_InnerFrame -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
