@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demoAutomationTesting.HandlingSingle_InnerFrame">
+      <class name="globalsQA.HandlingInnerFrame">
         <methods>
-          <include name="singleInnerFrame"/>
+          <include name="MT_CpursePrice"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- demoAutomationTesting.HandlingSingle_InnerFrame -->
+      </class> <!-- globalsQA.HandlingInnerFrame -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
