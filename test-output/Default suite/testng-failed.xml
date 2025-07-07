@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="globalsQA.HandlingInnerFrame">
+      <class name="tutorialsPoint.HandlingFrames">
         <methods>
-          <include name="MT_CpursePrice"/>
+          <include name="innerFrame1"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- globalsQA.HandlingInnerFrame -->
+      </class> <!-- tutorialsPoint.HandlingFrames -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
