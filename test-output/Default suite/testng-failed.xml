@@ -5,7 +5,7 @@
     <classes>
       <class name="tutorialsPoint.HandlingFrames">
         <methods>
-          <include name="innerFrame1"/>
+          <include name="innerFrame2"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
